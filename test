@@ -1,0 +1,18 @@
+# Demo file for code quality review
+
+def calculate_total(price):
+    tax = price * 0.0825      # magic number, should be a named constant
+    total = price + tax
+    return total
+    print("calculation done") # dead code, never runs after return
+
+# TODO: clean this up later
+def number_to_word(x):
+    if x == 1:
+        return "one"
+    elif x == 2:
+        return "two"
+    elif x == 3:
+        return "three"
+    elif x == 4:
+        return "four"
